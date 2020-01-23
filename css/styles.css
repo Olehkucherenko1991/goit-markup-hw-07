@@ -1,0 +1,131 @@
+:root {
+  --primary-text-style: 'Montserrat', sans-serif;
+  --secondary-text-style: 'Roboto', sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.body {
+  margin: 0;
+}
+
+.site-nav {
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.user-button {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  margin-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--primary-text-style);
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-button:hover {
+  border: solid 2px #ffffff;
+  border-radius: 20px;
+}
+
+.hero-image {
+  margin: 0;
+  background-color: cadetblue;
+  background-image: url(../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  width: 50%;
+  font-family: var(--primary-text-style);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-family: var(--secondary-text-style);
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.hero-button {
+  display: inline-block;
+  text-align: center;
+  width: 280px;
+  height: 35px;
+  margin: 0;
+  background-color: red;
+  border: solid 1px red;
+  border-radius: 20px;
+  font-family: var(--primary-text-style);
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: #03dffc;
+  transform: scaleX(1.1);
+}
+
+.search-title {
+  font-family: var(--primary-text-style);
+  font-weight: 700;
+}
+
+.scroling-button {
+  width: 280px;
+  height: 35px;
+  border: solid 2px #ff4d4f;
+  background: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--primary-text-style);
+  font-weight: 700;
+  color: #ff4d4f;
+}
+
+.scroling-button:hover,
+.scroling-button:focus {
+  color: red;
+}
