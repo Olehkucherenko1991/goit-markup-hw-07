@@ -14,38 +14,51 @@ html {
   margin: 0;
 }
 
-.site-nav {
-  top: 0;
-  left: 0;
+.container {
+  display: block;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.container {
-  width: 1440px;
+.container .site-nav {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .logo {
+  display: block;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
   text-transform: uppercase;
-  font-size: 30px;
   text-decoration: none;
   color: #ffffff;
-}
-
-.user-list {
-  display: flex;
-  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .nav-list {
   list-style: none;
 }
 
+.user-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .user-button {
   display: inline-block;
-  text-align: center;
   margin: 0;
+  margin-top: 20px;
   margin-right: 5px;
+  margin-bottom: 130px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 11px;
@@ -58,54 +71,76 @@ html {
   color: #ffffff;
 }
 
-.user-button:hover {
+.user-button:hover,
+.user-button:focus {
   border: solid 2px #ffffff;
   border-radius: 20px;
+  font-weight: 400;
 }
 
 .hero-image {
+  display: block;
   margin: 0;
+  margin-bottom: 75px;
   background-color: cadetblue;
-  background-image: url(../images/hero-img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
+  height: 540px;
+}
+
+.hero-description {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
   text-transform: uppercase;
-  width: 50%;
   font-family: var(--primary-text-style);
   font-weight: 700;
   color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .subtitle {
   font-family: var(--secondary-text-style);
   font-weight: 300;
   color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .hero-button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   width: 280px;
   height: 35px;
-  margin: 0;
   background-color: red;
   border: solid 1px red;
   border-radius: 20px;
   font-family: var(--primary-text-style);
   font-weight: 700;
+  font-size: 14px;
   color: #ffffff;
   cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: #03dffc;
   transform: scaleX(1.1);
+  font-size: 15px;
+  transition: 1s all ease;
 }
 
 .search-title {
@@ -123,9 +158,44 @@ html {
   font-family: var(--primary-text-style);
   font-weight: 700;
   color: #ff4d4f;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .scroling-button:hover,
 .scroling-button:focus {
   color: red;
+  transform: scaleX(1.1);
+  font-size: 17px;
+  transition: 1s all ease;
+}
+
+/*Meeting section*/
+
+.search-title {
+  display: block;
+  text-align: center;
+}
+
+.main-list {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partners-list {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 340px) {
+  .logo {
+    font-size: 20px;
+  }
+  .hero-image {
+    background-image: url(../images/hero-img-mobile.png);
+  }
 }
