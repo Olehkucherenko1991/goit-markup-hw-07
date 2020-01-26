@@ -191,11 +191,17 @@ html {
   list-style: none;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 740px) {
   .logo {
     font-size: 20px;
   }
   .hero-image {
     background-image: url(../images/hero-img-mobile.png);
+  }
+}
+
+@media screen and (min-width: 741px) {
+  .hero-image {
+    background-image: url(../images/hero-img-comp.png);
   }
 }
