@@ -146,6 +146,8 @@ html {
 }
 
 .search-title {
+  display: block;
+  text-align: center;
   font-family: var(--primary-text-style);
   font-weight: 700;
 }
@@ -184,18 +186,31 @@ html {
 }
 
 .main-list {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .partners-list {
+  display: block;
   list-style: none;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main-list .partners-list:last-child {
+  margin-bottom: 30px;
+}
+
+.partner-list__about {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 195px;
 }
 
@@ -255,5 +270,4 @@ html {
 
   .partners-list {
     flex-basis: 50%;
-  }
 }
