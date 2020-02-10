@@ -227,12 +227,14 @@ html {
 
 .overlay-img {
   position: relative;
+  width: 122px;
+  margin: 0 auto;
 }
 
 svg.icon {
   display: block;
   position: absolute;
-  right: 40px;
+  right: 0px;
   bottom: 0;
   width: 40px;
   height: 40px;
