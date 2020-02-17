@@ -243,6 +243,8 @@ html {
 svg.icon {
   display: block;
   position: absolute;
+  padding-top: 5px;
+  padding-left: 5px;
   right: 0px;
   bottom: 0;
   width: 40px;
@@ -402,7 +404,7 @@ svg.icon:hover {
   }
 
   .partners-list {
-    flex-basis: auto;
+    flex-basis: calc(100% / 4 - 30px);
     margin: 0;
     margin-right: 30px;
     margin-bottom: 50px;
